@@ -1,0 +1,276 @@
+/* .home-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.home-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.home-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.home-image {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-image:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .home-container {
+        padding: 1rem;
+    }
+
+    .home-container h2 {
+        font-size: 2rem;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+    }
+
+    .home-image {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .home-container {
+        padding: 1.5rem;
+    }
+
+    .home-container h2 {
+        font-size: 2.2rem;
+    }
+
+    .home-container p {
+        font-size: 1.1rem;
+    }
+
+    .home-image {
+        width: 80%;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .home-container {
+        padding: 2rem;
+    }
+
+    .home-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .home-container p {
+        font-size: 1.2rem;
+    }
+
+    .home-image {
+        width: 60%;
+        margin-top: 2rem;
+    }
+} */
+
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #aaa7a7;
+}
+
+.home-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.home-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.actions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    
+}
+
+.actions-container button {
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+
+.actions-container button:hover {
+    background-color: #0056b3;
+}
+
+.data-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.data-container h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.data-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.pagination-controls button {
+    margin: 0 10px; /* Adjust as needed */
+}
+
+.data-container th, .data-container td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+.data-container th {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .home-container {
+        padding: 1rem;
+    }
+
+    .home-container h2 {
+        font-size: 2rem;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+    }
+
+    .actions-container {
+        align-items: center;
+    }
+
+    .actions-container button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .data-container {
+        padding: 0.5rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .home-container {
+        padding: 1.5rem;
+    }
+
+    .home-container h2 {
+        font-size: 2.2rem;
+    }
+
+    .home-container p {
+        font-size: 1.1rem;
+    }
+
+    .actions-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .actions-container button {
+        margin-bottom: 0;
+        margin-right: 0.5rem;
+    }
+
+    .data-container {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .home-container {
+        padding: 2rem;
+    }
+
+    .home-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .home-container p {
+        font-size: 1.2rem;
+    }
+
+    .actions-container {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .actions-container button {
+        margin-bottom: 0;
+        margin-right: 0.5rem;
+    }
+
+    .data-container {
+        padding: 1.5rem;
+    }
+
+    
+}
+

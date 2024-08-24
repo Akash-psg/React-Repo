@@ -1,0 +1,123 @@
+/* AddTeamMembers.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.atm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.05); /* Light background with subtle contrast */
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.atm-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/project-manager_img.webp'); /* Adjust path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15; /* Slight transparency for a professional backdrop */
+    z-index: -1; /* Ensure it is behind the content */
+}
+
+.atm-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.atm-form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.atm-form-group {
+    margin-bottom: 20px;
+}
+
+.atm-label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.atm-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+}
+
+.atm-select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.atm-submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.atm-submit-button:hover {
+    background-color: #0056b3;
+}
+
+.atm-submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* AddTeamMembers.css */
+
+.atm-back-button {
+    color: #fff;
+    background-color: #007bff;
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for spacing */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 20px; /* Space above the button */
+    display: inline-block; /* Align with other inline elements */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from text */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+}
+
+.atm-back-button:hover {
+    background-color: #0056b3; /* Darker gray on hover */
+}
+
+.atm-back-button:active {
+    background-color: #ccc; /* Even darker gray when active */
+}

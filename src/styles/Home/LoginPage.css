@@ -1,0 +1,135 @@
+#loginPageContainer {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginImageContainer {
+    flex: 2;
+    background: url('../../images/Login_Img.jpg') no-repeat center center;
+    background-size: cover;
+    width: 50%;
+    height: 100%; 
+}
+
+#loginFormContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    height: 100%;
+}
+
+#welcomeMessage {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#welcomeMessage h1 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 0.5rem;
+}
+
+#welcomeMessage p {
+    font-size: 1rem;
+    /* color: #ff69b4; */
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+#loginForm input {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginForm input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#loginForm button {
+    background: #ff2bca;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#loginForm button:hover {
+    background: #ff6f61;
+}
+
+#forgotPasswordLink {
+    margin-top: 1rem;
+    background: none;
+    border: none;
+    color: #ff4b2b;
+    cursor: pointer;
+    /* text-decoration: underline; */
+    font-size: 1rem;
+}
+
+#forgotPasswordLink:hover {
+    text-decoration: underline;
+    background: rgba(255, 255, 255, 1);
+    color: #ff6f61;
+}
+
+@media (max-width: 767px) { 
+    #loginPageContainer {
+        flex-direction: column;
+    }
+
+    #loginImageContainer {
+        width: 100%;
+        height: 50%;
+    }
+
+    #loginFormContainer {
+        width: 100%;
+        height: 50%; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { 
+    #loginImageContainer {
+        width: 50%;
+        height: 100%;
+    }
+
+    #loginFormContainer {
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #loginImageContainer {
+        width: 50%;
+        height: 100%; 
+    }
+
+    #loginFormContainer {
+        width: 50%;
+        height: 100%; 
+    }
+}

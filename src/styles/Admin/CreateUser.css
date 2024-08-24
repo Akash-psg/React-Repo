@@ -1,0 +1,124 @@
+#createUserContainer {
+    background-color: #acaab1;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: 30px auto;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+#createUserTitle {
+    color: #181515;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+#createUserForm {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.createUserLabel {
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #0f0f0f;
+}
+
+.createUserInput, .createUserSelect {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.createUserInput:focus, .createUserSelect:focus {
+    background-color: #ddd8d8;
+}
+
+.createUserButton {
+    font-size: 1rem;
+    background-color: #383737;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.createUserButton:hover {
+    background-color: #2c2b2c; 
+    color: #fff;
+}
+
+/* @media (max-width: 600px) {
+    #createUserContainer {
+        padding: 1rem;
+    }
+
+    #createUserTitle {
+        font-size: 1.5rem;
+    }
+
+    .createUserInput, .createUserSelect {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+
+    .createUserButton {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    #createUserContainer {
+        padding: 1.5rem;
+    }
+
+    #createUserTitle {
+        font-size: 1.75rem;
+    }
+
+    .createUserInput, .createUserSelect {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .createUserButton {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    #createUserContainer {
+        padding: 2rem;
+    }
+
+    #createUserTitle {
+        font-size: 2rem;
+    }
+
+    .createUserInput, .createUserSelect {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    .createUserButton {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+} */

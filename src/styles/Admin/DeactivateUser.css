@@ -1,0 +1,117 @@
+.deactivate-user-container {
+    background-color: #acaab1;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: 30px auto;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+.deactivate-user-title {
+    color: #181515;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.deactivate-user-form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.deactivate-user-label {
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #0f0f0f;
+}
+
+.deactivate-user-select, 
+.deactivate-user-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.deactivate-user-select {
+    background-color: #ffffff;
+}
+
+.deactivate-user-button {
+    font-size: 1rem;
+    background-color: #d82626;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.activate-user-button {
+    font-size: 1rem;
+    background-color:  #2de946;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.activate-user-button:hover {
+    background-color: #3ea04b;  
+    color: #fff; 
+}
+
+.deactivate-user-button:hover {
+    background-color: #e92d2d;  
+    color: #fff; 
+}
+
+.deactivate-user-select {
+    background-color: #ddd8d8;
+}
+
+.deactivate-user-form button + button {
+    margin-top: 10px;
+}
+
+.deactivate-user-button:hover {
+    background-color: #e92d2d;  
+    color: #fff; 
+}
+
+.deactivate-user-container select:focus, 
+.deactivate-user-container input:focus {
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+}
+
+@media (max-width: 600px) {
+    .deactivate-user-container {
+        padding: 15px;
+    }
+
+    .deactivate-user-title {
+        font-size: 1.4em;
+    }
+
+    .deactivate-user-button {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+}

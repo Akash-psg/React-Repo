@@ -1,0 +1,91 @@
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.admin-navbar {
+    display: flex;
+    font-size: 1.095rem;
+    font-weight: 400;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.admin-nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 1rem;
+}
+
+.admin-nav-item:hover {
+    text-decoration: underline;
+}
+
+.admin-logout-button {
+    background-color: #f44336;
+    font-size: 1.03rem;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.3rem;
+    cursor: pointer;
+    margin: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.admin-logout-button:hover {
+    background-color: #d32f2f;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+@media (max-width: 600px) {
+    .admin-navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admin-nav-item, .logout-button {
+        margin: 0.5rem 0;
+    }
+
+    .admin-content {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .admin-navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .admin-nav-item, .logout-button {
+        margin: 0.5rem 0.5rem;
+    }
+
+    .admin-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .admin-navbar {
+        justify-content: flex-start;
+    }
+
+    .admin-nav-item, .logout-button {
+        margin: 0.5rem 1rem;
+    }
+
+    .admin-content {
+        padding: 2rem;
+    }
+}

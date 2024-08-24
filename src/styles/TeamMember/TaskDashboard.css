@@ -1,0 +1,298 @@
+/* TeamMember.css */
+
+/* Container for milestones */
+.milestones-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f0f4f8;
+    box-sizing: border-box;
+    align-items: center; /* Center the milestones in the container */
+}
+
+/* Individual milestone styling */
+.milestone {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%; /* Adjust width for better alignment */
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Different background colors for milestones */
+.milestone:nth-child(odd) {
+    background-color: #e3f2fd; /* Light blue for odd milestones */
+}
+
+.milestone:nth-child(even) {
+    background-color: #ffebee; /* Light red for even milestones */
+}
+
+.milestone:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.milestone-title {
+    font-size: 2em;
+    color: #022deb; /* Deep blue color */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 71, 171, 0.2); /* Light shadow for text */
+}
+
+.milestone-description {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/* Tasks within milestones */
+.tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-item {
+    background: linear-gradient(to right, #0379f7, #00c6ff); /* Gradient sky blue */
+    border: 1px solid #b0e3ff; /* Slightly darker border */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.task-item:hover {
+    background: #c0e7ff; /* Darker sky blue on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.task-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: inherit;
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Full width button */
+    padding: 0; /* Remove default padding */
+}
+
+/* Welcome Titles */
+.welcome-message {
+    font-size: 2.5em;
+    color: #0047ab; /* Deep blue color */
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 71, 171, 0.2); /* Light shadow for text */
+}
+
+.welcome-text {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Team Logout Button */
+.team-logout-button {
+    padding: 10px 20px;
+    background-color: #ff5e5e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.team-logout-button:hover {
+    background-color: #ff4040;
+}
+
+/* Task details overlay */
+.task-details-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.task-details {
+    position: relative;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    box-sizing: border-box;
+    animation: slideIn 0.3s ease;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+}
+
+.task-detail {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.task-detail strong {
+    color: #0047ab; /* Deep blue for labels */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .milestone-title {
+        font-size: 1.8em;
+    }
+    .milestone-description {
+        font-size: 1.1em;
+    }
+    .task-item {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 992px) {
+    .milestone-title {
+        font-size: 1.6em;
+    }
+    .milestone-description {
+        font-size: 1em;
+    }
+    .task-item {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .milestone {
+        width: 90%;
+    }
+    .milestone-title {
+        font-size: 1.4em;
+    }
+    .milestone-description {
+        font-size: 0.9em;
+    }
+    .task-item {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 576px) {
+    .milestone {
+        width: 95%;
+    }
+    .milestone-title {
+        font-size: 1.2em;
+    }
+    .milestone-description {
+        font-size: 0.85em;
+    }
+    .task-item {
+        font-size: 0.7em;
+    }
+    .welcome-message {
+        font-size: 2em;
+    }
+    .welcome-text {
+        font-size: 1.2em;
+    }
+}
+
+/* Add this to your existing CSS file or a new file */
+.navbar {
+    background-color: #0047ab; /* Deep blue color */
+    padding: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.1em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    background-color: #003d91; /* Slightly darker blue on hover */
+    border-radius: 5px;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.logout-button:hover {
+    color: #ff5e5e; /* Red color on hover */
+}

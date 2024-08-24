@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Container styling */
+#track-activity-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+#track-activity-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/project-manager_img.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/* Title styling */
+#track-activity-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form styling */
+#track-form-group {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#track-label {
+    font-size: 1.1rem;
+    margin: 20px 0 10px;
+    font-weight: 500;
+    color: #555;
+}
+
+#userSelect {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+}
+
+#userSelect:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#trackButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#trackButton:hover {
+    background-color: #0056b3;
+}
+
+#trackButton:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Activity container styling */
+#activityContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Activity card styling */
+.track-activity-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    flex: 1 1 calc(33% - 20px);
+    max-width: 320px;
+}
+
+.track-activity-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Project title styling */
+.track-activity-card h3.card-title {
+    font-size: 1.5rem;
+    color: #e74c3c; /* Red color for project title */
+    margin-bottom: 10px;
+}
+
+/* Project description styling */
+.track-activity-card p {
+    font-size: 1rem;
+    color: #34495e;
+    margin: 5px 0;
+}
+
+/* Task title styling */
+.track-activity-card .task-title {
+    font-size: 1.5rem;
+    color: #3498db; /* Blue color for task title */
+    margin-bottom: 10px;
+    margin-top: 20px; /* Space between project and task */
+}
+
+/* Task description styling */
+.track-activity-card .task-details {
+    font-size: 1rem;
+    color: #1080ef;
+    margin: 5px 0;
+}
+
+/* Milestone title styling */
+.track-activity-card .milestone-title {
+    font-size: 1.25rem;
+    color: #27ae60; /* Green color for milestone title */
+    margin-top: 20px; /* Space between task and milestone */
+    font-weight: 500;
+}
+
+/* Milestone description styling */
+.track-activity-card .milestone-details {
+    font-size: 1rem;
+    color: #2ecc71;
+    margin: 5px 0;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+    #track-form-group {
+        max-width: 80%;
+    }
+
+    .track-activity-card {
+        flex: 1 1 calc(45% - 20px);
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #track-form-group {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .track-activity-card {
+        flex: 1 1 calc(100% - 20px);
+        max-width: 100%;
+    }
+
+    #track-activity-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #track-form-group {
+        padding: 15px;
+    }
+
+    #trackButton {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #userSelect {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #track-activity-title {
+        font-size: 1.8rem;
+    }
+
+    .track-activity-card {
+        padding: 15px;
+    }
+
+    .track-activity-card h3.card-title,
+    .track-activity-card .task-title {
+        font-size: 1.25rem;
+    }
+
+    .track-activity-card .milestone-title {
+        font-size: 1.1rem;
+    }
+}

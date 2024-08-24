@@ -1,0 +1,86 @@
+/* Message.css */
+
+.message-container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.message-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0047ab;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #003d91;
+}
+
+/* Message.css */
+
+
+.go-back-button {
+    color: #fff;
+    background-color: #007bff;
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for spacing */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 20px; /* Space above the button */
+    display: inline-block; /* Align with other inline elements */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from text */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    position: absolute; 
+    top: 490px; 
+    left: 20px; 
+}
+
+.go-back-button:hover {
+    background-color: #0056b3; /* Darker gray on hover */
+}
+
+.go-back-button:active {
+    background-color: #ccc; /* Even darker gray when active */
+}
